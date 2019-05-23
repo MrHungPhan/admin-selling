@@ -1,0 +1,68 @@
+
+.files-image .image-products div{
+    width: 50px;
+    height: 50px;
+    padding: .1rem;
+    overflow: hidden;
+}
+
+.files-image .image-products div::before{
+    content: '';
+    width: calc(50px - 0.1rem);
+    height: calc(50px - 0.1rem);
+    background: rgb(0,0,0,.3);
+    background-image: url(https://img.icons8.com/ios/50/000000/cancel.png);
+    background-position: center center;
+    background-size: cover;
+    display: none;
+    position: absolute;
+    z-index: 9
+}
+
+.files-image .image-products div:hover::before{
+    display: block;
+    cursor: pointer;
+}
+
+.files-image .files-dropzone{
+    border: 1px dashed #ddd;
+    padding : 1em;
+}
+
+.files-image .image-products div img{
+    width: 100%;
+}
+
+
+.files-image .image-products{
+    display: flex;
+    padding: .3em;
+    border : 1px dashed #ddd;
+}
+
+
+.files-image .image-products.not-img{
+    border: none
+}
+
+.pick-size-color {
+    margin-bottom: .4em
+}
+
+.pick-size-color >div:first-child{
+    width: 50px;
+    height: 50px;
+    margin-bottom: .2em;
+    border : 1px solid #ddd;
+    padding: .1em;
+    overflow: hidden;
+}
+
+.pick-size-color img{
+    width: 100%; 
+}
+
+.css-kj6f9i-menu.select__menu{
+    position: absolute;
+    z-index: 999;
+}
